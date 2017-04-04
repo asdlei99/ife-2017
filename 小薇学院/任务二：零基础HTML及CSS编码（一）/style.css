@@ -1,0 +1,163 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background: #ddd
+}
+
+/*导航栏*/
+header {
+	background: black;
+	height: 70px;
+}
+ 
+nav {
+	float: right;
+	margin: 25px 10px;
+}
+
+nav li {
+	display: inline-block;
+ 	float: left;
+ 	color: white;
+ 	margin-right: 20px;
+}
+
+
+/*页面主体部分的设置*/
+article, aside {
+	background: white;
+	margin: 20px;
+}
+
+/*文章的格式*/
+article {
+	padding: 20px;
+	line-height: 1.8;
+}
+
+article h3,
+p span {
+		color: #bbb;
+}
+
+p {
+	text-indent: 2em;
+}
+
+h3 + p {
+	text-indent: 0;
+}
+
+.writer {
+	margin-right: 1em;
+}
+
+
+/*文章二*/
+ul.article2 {
+	list-style: none;
+}
+
+/*咸鸭蛋*/
+.article3 span {
+	color: black;
+	display: block;
+	margin: 0 38px;
+}
+
+.article3 p {
+	border: solid 1px #bbb;
+	width: 250px;
+	margin: 20px;
+}
+
+.article3 img {
+	width: 200px;
+	margin: 1px 25px;
+}
+
+/*文章四*/
+.article4 .writer {
+	margin-right: 2em;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	margin: 10px auto;
+	text-align: left;
+}
+
+th {
+	background: black;
+	color: white;
+}
+
+tfoot {
+	background: #ccc;
+}
+
+
+/*侧栏*/
+aside {
+	padding: 20px;
+	line-height: 2;
+}
+
+aside h2 {
+	border-left: 3px solid #ccc;
+	padding-left: 1em;
+}
+
+aside span {
+	color: black;
+}
+
+/*表格格式的设置*/
+.form-write {
+	padding-left: 20%;
+ 
+}
+
+.form-align {
+	width: 20%;
+    display: inline-block;
+    text-align: right;
+    margin-right: 1%;
+    margin-bottom: 13px;
+    vertical-align: middle;
+}
+
+input, select, textarea {
+	vertical-align: middle;
+}
+
+.form-description {
+	padding-left: 21%;
+}
+
+fieldset {
+	border: none;
+}
+
+input[type="submit"] {
+	width: 100%;
+	padding: 5px;
+	color: white;
+	font-size: 1.2em;
+	background: #183D9A;
+	border: #183d9a solid 1px;
+	border-radius: 10px;
+}
+
+/*页脚的设置*/
+footer {
+	background: black;
+	color: white;
+	height: 60px;
+	text-align: center;
+ 	padding-top: 20px;
+}
