@@ -1,0 +1,39 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+div.parent {
+	width: 400px;
+	height: 200px;
+	background: #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform : translate(-50%,-50%);
+	/*CSS中transform 属性允许你修改CSS可视化模型
+	的坐标空间。通过transform，可以让元素进行
+	移动（translate）、旋转（rotate）、缩放（scale）
+	、倾斜（skew）*/
+	/*http://blog.csdn.net/freshlover/article/details/11579669*/
+	/*https://www.zhihu.com/question/19583370*/
+}
+
+p.rectangle {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background: #fc0;
+}
+
+p.rectangle-1 {
+	border-radius: 0 0 50px 0;
+}
+
+p.rectangle-2 {
+	bottom: 0px;
+	right: 0px;
+	border-radius: 50px 0 0 0;
+}
+/*实现半圆，1/4圆，最关键的是半径值相对于宽高指定，
+	以及选择哪个脚实现半径*/
