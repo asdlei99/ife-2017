@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	background: #eee;
+}
+
+img {
+	width: 80px;
+	height: 80px;
+}
+
+/*第一列的相关设置*/
+.column-1 {
+	float: left;
+	width: 200px;
+	background: white;
+	padding: 20px;
+	border: 1px solid #999;
+	margin-left: 20px;
+	font-size: 0;
+}
+
+.column-1 img {
+	display: inline-block;
+}
+
+.name {
+	display: inline-block;
+	vertical-align: top;
+	width: 78px;
+	text-align: right;
+	font-size: 16px;
+	/*解决inline-block宽度相加实际数值不对的问题，
+	产生的原因是换行或回车所产生空白符所致
+	这里用的是父元素字体大小为0，实际就将字符设为0了，
+	子元素再调整回来的方法
+	https://www.zhihu.com/question/21468450*/
+}
+
+/*第三列的相关设置*/
+.column-3 {
+	width: 120px;
+	margin-right: 20px;
+	padding: 20px;
+	background: white;
+	float: right;
+	border: 1px solid #999;
+}
+
+.column-3 img + img {
+	margin-top: 20px;
+}
+
+/*第二列的相关设置*/
+.column-2 {
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: 240px;
+	margin-right: 160px;
+	border: 1px solid #999;
+	background: white;
+	line-height: 1.5;
+/*	display: inline-block;*/
+/*display:inline-block,元素会接在inline元素后面像
+块级元素一样显示-不会发生折行，但和inline元素的
+区别在于当其包含块-也就是其父元素容器的宽度不能
+够显示其全部内容时-一行显示不全时，会把整块元素
+向下移动一直到float元素的下方。经测试，确实如此*/
+}
+
