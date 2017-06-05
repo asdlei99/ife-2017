@@ -1,0 +1,35 @@
+/*width=元素+padding+border，
+ 即为显示宽度*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.btn {
+	padding: 3px 15px;
+	margin: 5px 5px;
+	border: 1px solid #ccc;
+	background: white;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.btn-1 {
+	margin-left: 5px;
+}
+
+.btn-2 {
+	margin-right: 20px;
+}
+
+#disnum {
+	margin-left: 30px;
+}
+
+#disnum li {
+	display: inline-block;
+	background: red;
+	padding: 5px 5px;
+	margin: 5px 5px;
+}
