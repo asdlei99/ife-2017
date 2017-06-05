@@ -76,7 +76,8 @@ function sortAqiData(data) {
  * 格式见ul中的注释的部分
  */
 function render(data) {
-  for (var i=0; i<=document.getElementById("source").childNodes.length-1; i++) {
+  for (var i=0; i<=data.length-1; i++) {
+  //document.getElementById("source").children.length-1
     var resort = document.getElementById("resort");
     var lili = document.createElement("li");
     var bbb = document.createElement("b");
