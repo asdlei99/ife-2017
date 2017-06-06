@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+input[type] {
+	padding: 10px;
+	margin: 10px;
+}
+
+input[type="button"] {
+	padding: 4px 20px;
+	background: #f8f9fa;
+	color: black;
+	border: 1px solid #f8f9fa;
+	border-radius: 5px;
+}
+
+#backId {
+	background: black;
+	height: 300px;
+	position: relative;
+}
+
+#backId div {
+	display: inline-block;
+	width: 30px;
+	background: orange;
+	position: absolute;
+	bottom: 0;
+	border: solid #000 2.5px;
+	border-bottom: 0;
+	border-top: 0;
+}
